@@ -14,7 +14,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        return response()->json(User::get());
+        return response()->json();
+        // return response()->json(User::paginate());
     }
 
     /**
